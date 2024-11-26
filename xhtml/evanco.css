@@ -1,0 +1,45 @@
+*{margin:0;padding:0;}
+
+a{text-decoration:none;}
+	p {font-family: bodoni mt; line-height:180%;}
+	h1 { text-weight:bold; font-family:ravie;}
+	h3{color:black; font-family:Tahoma; font-weight:bold;}
+h2{font-family:ravie; font-weight:bold; text-decoration:underline;}
+    *{margin:0px; padding:0px;}
+
+	h1{font-family:ravie; font-size:20px;font-weight:bold; color:white;	}
+	
+	h2{font-family:tahoma; font-size:15px;font-weight:bold;	}
+	
+	header, footer, section, hgroup, article, aside, nav{display:block;}
+		
+	body{text-align:; -webkit-box-pack:center;}
+	
+	
+	#soo{ font-family:segoe script; color:white;}
+	
+	#ypi{position:absolute; top:0.5%;}
+	
+	#main{border-radius:7px;  margin:50px auto; margin-top:0px; text-align:left; background:white;
+	
+	}
+	
+	#heda{background:deeppink; padding:20px; color:white;  padding-left:130px;}
+	
+	#narv{background:black; color:white; width:100%;  }
+	
+	#narv li{list-style:none; display:inline-block; font-family:bodoni; font-size:14px;
+	padding:15px; margin-left:80px; }
+	
+	#secmain{  margin:5px; padding:5px;  }
+	
+	article{background:hotpink; margin-top:3px; padding:20px;}
+	article footer{text-align:right;}
+	
+	#futa{border-top:2px black solid; border-bottom:2px black solid; clear:both;
+	text-align:center; padding:20px; background:hotpink;}
+	
+	
+	#fb{position:absolute; top:7px; left:85%;}
+	#tw{position:absolute; top:7px; left:90%;}
+	#ig{position:absolute; top:7px; left:95%;}

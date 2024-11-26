@@ -1,0 +1,52 @@
+
+#box:hover{transform:rotate(360deg); height:30px; width:190px; background:deeppink;
+            opacity:8;}
+#serch:hover{transform:scale(1.2);}
+*{margin:0px; padding:0px;}
+	h1{font-family:ravie; font-size:20px;font-weight:bold;	}
+	
+	h2{font-family:tahoma; font-size:15px;font-weight:bold;	}
+	
+	header, footer, section, hgroup, article, aside, nav{display:block;}
+		
+	body{ width:100%; display:-webkit-box; -webkit-box-pack:center; }
+	
+	#soo{padding-left:210px; }
+	
+	#main{border-radius:7px;  margin:50px auto; margin-top:0px; text-align:left; background:white;
+	
+	}
+	
+	#heda{background:deeppink; padding:20px;}
+	
+	#narv{background:black; color:white;  }
+	
+	#narv li{list-style:none; display:inline-block; font-family:bodoni; font-size:14px;
+	padding:15px; margin-left:80px;
+	}
+	
+	#tdiv{display:-webkit-box; -webkit-box-orient:horizontal; }
+	
+    #secmain{  margin:10px; padding:10px;  -webkit-box-flex:1;}
+	
+	#asyde{ background:hotpink;width:220px; margin:20px 0px; padding:2%; height:55%;}
+	
+	#futa{border-top:2px black solid; border-bottom:2px black solid; clear:both;
+	 padding:20px; background:hotpink;}
+	
+	article{background:hotpink; margin-top:3px; padding:20px;}
+	article footer{text-align:right;}
+	
+	#ati{background:white; text-align:center; margin-top:none; border-radius:0px;
+  margin-top:0px; position:absolute; top:182.6%; padding:20px; font-family:ravie;
+  font-size:13px;}
+	
+	#vid{border:2px solid brown; border-radius:7px; padding:7px; }
+	
+	
+	#fb{position:absolute; top:15px; left:85%;}
+	#tw{position:absolute; top:15px; left:90%;}
+	#ig{position:absolute; top:15px; left:95%;}
+	pic{position:absolute; top:7px; left:70%;}
+	
+	

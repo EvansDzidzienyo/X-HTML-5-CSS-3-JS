@@ -1,0 +1,183 @@
+<!doctype>
+<html lang="en">
+
+<head>
+<style rel="stylesheet">
+body{font-family:calibri; background:#000033; color:white;}
+*{}
+#usname{border:2px solid blue;background:cyan; border-radius:6px; margin-left:23px;}
+#ail{border:2px solid blue;background:cyan; border-radius:6px; margin-left:25px; margin-top:10px;}
+#pword{border:2px solid blue;background:cyan; border-radius:6px; margin-left:24px; margin-top:10px;}
+#cpword{border:2px solid blue;background:cyan; border-radius:6px; margin-left:24px; margin-top:10px;}
+#mbn{border:2px solid blue;background:cyan; border-radius:6px; margin-left:24px; margin-top:10px;}
+#message{color:red;margin-left:150px;}
+#messag{color:red;margin-left:150px;}
+#messagez{color:red;margin-left:150px;}
+#mess{color:red;margin-left:150px;}
+#messa{color:red;margin-left:150px;}
+#messagg{color:red;margin-left:150px;}
+#slect{border:2px solid blue;background:cyan; border-radius:6px; margin-left:24px; margin-top:10px; }
+#thebox{ margin-left:20px; margin-top:10px;}
+#sbt{margin-left:70px;}
+#frm{margin-top:40px;margin-left:40px;}
+#us{margin-left:53px;}
+#em{margin-left:77px;}
+#pwd{margin-left:57px;}
+#mobi{margin-left:17px;}
+#sc{margin-left:22px;}
+#ig{margin-left:75px;}
+h1{text-align:center;color:white;font-family:bodoni;background:brown;width:50%;margin-left:30%;border-radius:7px;}
+</style>
+<title>scripting nkoaa</title>
+
+
+</head>
+
+<body>
+<h1>FORMS FOR YOU</h1>
+
+<form onsubmit="return evanco()" size="50px">
+
+<span id="us">Username:</span>
+<input type="text" id="usname" value=""  /><br/>
+<span id="message"></span><br/>
+
+<span id="em">E-mail:</span>
+<input type="text" id="ail" value="" /><br/>
+<span id="messa"></span><br/>
+
+
+
+<span id="pwd">Password:</span>
+<input type="password" id="pword" value=""  /><br/>
+<span id="messag"></span><br/>
+
+
+<span id="cp">Confirm Password:</span>
+<input type="password" id="cpword" value=""  /><br/>
+<span id="messagg"></span><br/>
+
+
+<span id="mobi">mobile number:</span>
+<input type="text" id="mbn" value=""  /><br/>
+<span id="messages" style="color:red; margin-left:150px;"></span><br/>
+
+
+<span id="sc">Select Country:</span>
+<select id="slect" >
+<option>Select Country</option>
+<option>Pakistan</option>
+<option>Nigera</option>
+<option>Ghana</option>
+<option>Saudi Arabia</option>
+</select><br/>
+<span id="messagez"></span><br/>
+
+
+<span id="ig">I agree:</span>
+<input type="checkbox" id="thebox"  /><br/>
+<span id="mess"></span><br/><br/>
+
+<input type="submit" value="Submit" id="sbt"/>
+</form>
+
+
+<script type="text/javascript">
+function evanco(){
+var username = document.getElementById('usname').value;
+var email = document.getElementById('ail').value;
+var password = document.getElementById('pword').value;
+var cpassword = document.getElementById('cpword').value;
+var select = document.getElementById('slect').selectedIndex;
+var box = document.getElementById('thebox').checked;
+var mob=document.getElementById('mbn').value;
+var right=/^[A-Za-z]+$/;
+var format=/.+@.+/;
+
+if (username==""){
+document.getElementById('message').innerHTML="**Pls fill in"
+return false;
+}
+
+if(!username.match(right)){
+document.getElementById('message').innerHTML="**Username should be only alphabets"
+return false;
+}
+
+if(username.length<6){
+document.getElementById('message').innerHTML="**Username should be greater than 6 characters"
+return false;
+}
+
+if (email==""){
+document.getElementById('messa').innerHTML="**Pls fill in"
+return false;
+}
+
+
+if(!email.match(format)){
+document.getElementById('messa').innerHTML="**pls enter a valid email ID"
+return false;
+}
+
+if (password==""){ 
+document.getElementById('messag').innerHTML="**Pls fill in"
+return false;
+}
+
+if(password.length<6){
+document.getElementById('messag').innerHTML="**Password should be at least 6 letters "
+return false;
+}
+
+
+if(password!=cpassword){
+document.getElementById('messagg').innerHTML="**Passwords should be equal"
+return false;
+}
+
+if (cpassword==""){
+document.getElementById('messagg').innerHTML="**Pls fill in"
+return false;
+}
+
+if (cpassword==""){
+document.getElementById('messagg').innerHTML="**Pls fill in"
+return false;
+}
+
+if(select==0){
+document.getElementById('messagez').innerHTML="**Pls select a country"
+return false;
+}
+
+
+if(box==false){
+document.getElementById('mess').innerHTML="**Pls agree to continue"
+return false;
+}
+
+
+
+if(mob==""){
+document.getElementById('messages').innerHTML="**Pls fill in"
+return false;
+}
+
+
+if(mob.length<10){
+document.getElementById('messages').innerHTML="**Pls mobile number should be at least 10 digits "
+return false;
+}
+
+
+
+}
+
+	</script>
+
+
+
+</body>
+
+</html>
